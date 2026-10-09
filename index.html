@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+        <title>Employee Form</title>
+</head>
+<body>
+<h2> Employee Form </h2>
+ID:
+<input type="number"  id ="id"><br><br>
+Name:
+<input type="text" id="name"><br><br>
+Role:
+<input type="text" id="role"><br><br>
+Salary:
+<input type="number" id="salary"><br><br>
+<button onclick="addEmployee()">AddEmployee</button>
+
+<h2>Employee Table</h2>
+<table border="1" id="table">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Role</th>
+<th>Salary</th>
+</tr>
+</table>
+<script>
+function addEmployee() {
+let table= document.getElementById("table");
+let row=table.insertRow();
+row.insert.insertCell(0).innerHTML=document.getElementById("id").value;
+row.insert.insertCell(1).innerHTML=document.getElementById("name").value;
+row.insert.insertCell(2).innerHTML=document.getElementById("roles").value;
+row.insert.insertCell(3).innerHTML=document.getElementById("salary").value;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
